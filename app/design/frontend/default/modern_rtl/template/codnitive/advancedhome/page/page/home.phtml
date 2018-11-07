@@ -1,0 +1,56 @@
+<?php
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_AdvancedHome
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+?>
+<div class="home-top">
+    <div class="brands flexslider"><?php echo $this->getChildHtml('home_brands') ?></div>
+    <div class="home-news"><?php echo $this->getChildHtml('news') ?></div>
+</div>
+<?php echo $this->getChildHtml('prods') ?>
+
+<script type="text/javascript" language="javascript">
+//<![CDATA[
+    jQuery(".home-top .brands .brand-logo").hover(function() {
+        Codnitive.image.hover(this, -65);
+    }, function () {
+        Codnitive.image.hover(this);
+    });
+
+//jQuery(window).load(function() {
+  jQuery('.brands').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    controlNav: false,
+    itemWidth: 144,
+    itemMargin: 10,
+    controlsContainer: ".brands .brands-arrows",
+//    easing:"easeInOutCubic",
+//    move:6,
+    animationSpeed:10000
+  }).flexslider("pause");
+//  jQuery('.brands').flexslider("pause");
+//});
+
+
+//]]>
+</script>

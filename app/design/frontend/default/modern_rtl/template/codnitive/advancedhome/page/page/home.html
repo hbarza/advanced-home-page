@@ -1,0 +1,174 @@
+<!--
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_AdvancedHome
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+-->
+<!-- For use in backend Home CMS page content -->
+
+<div class="home-top">
+    {{block type="cms/block" block_id="home_brands"}}
+    {{block type="clnews/news" template="codnitive/news/home/latest.phtml"}}
+</div>
+<script type="text/javascript">
+//<![CDATA[
+
+jQuery(".home-top .brands .brand-logo").hover(function() {
+    Codnitive.image.hover(this, -65);
+}, function() {
+    Codnitive.image.hover(this);
+});
+
+//jQuery(document).ready(function(){
+    jQuery("#home_brands").als({
+        visible_items: 7,
+        scrolling_items: 7,
+        orientation: "horizontal",
+        circular: "no",
+        autoscroll: "no",
+        interval: 4000,
+//        direction: "right",
+        hide_arrow: false
+    });
+//});
+    
+//]]>
+</script>
+<div class="home-bottom-products">
+<div class="main-column" >
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="512" collection_type="new" collection_title="تازه های کتاب فردا" is_slider="1" collection_limit="10" collection_column_count="20" custom_id="farda-new-prods"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="511" collection_type="best" collection_title="بهترین های کتاب فردا" is_slider="1" collection_limit="15" collection_column_count="20" custom_id="farda-best" is_auto="0"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="3" collection_type="best" collection_title="کتاب های دانشگاهی" is_slider="1" collection_limit="10" collection_column_count="20" custom_id="farda-university" is_auto="0"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="163" collection_type="best" collection_title="ادبیات" is_slider="1" collection_limit="10" collection_column_count="20" custom_id="farda-literature" is_auto="0"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="355" collection_type="best" collection_title="نرم افزار" is_slider="1" collection_limit="10" collection_column_count="20" custom_id="farda-software" is_auto="0"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="31" collection_type="best" collection_title="کامپیوتر" is_slider="1" collection_limit="10" collection_column_count="20" custom_id="farda-computer" is_auto="0"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="68" collection_type="best" collection_title="کودک و نوجوان" is_slider="1" collection_limit="10" collection_column_count="20" custom_id="farda-children" is_auto="0"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="515" collection_type="best" collection_title="علوم انسانی" is_slider="1" collection_limit="10" collection_column_count="20" custom_class="last" custom_id="farda-humanities" is_auto="0"}}
+</div>
+<div class="right-column col-left">
+{{block type="wishlist/customer_sidebar" name="new_pos_wishlist_sidebar" as="wishlist" template="wishlist/sidebar.phtml"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" category_id="561" collection_type="best" collection_title="پیشنهاد روز" is_slider="1" collection_limit="5" collection_column_count="1" custom_class="right-col-products" custom_id="farda-daily-offer" is_auto="0"}}
+{{block type="advancedhome/products" template="codnitive/advancedhome/products.phtml" collection_type="best" collection_title="پرفروش ترین ها" is_slider="1" collection_limit="5" collection_column_count="1" custom_class="right-col-products" custom_id="farda-bestsellers" is_auto="1"}}
+<!--{{block type="catalog/product_compare_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"}}-->
+{{block type="tag/popular" name="new_pos_tags_popular" as="tags_popular" template="tag/popular.phtml"}}
+</div>
+<div class="clearer"></div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+
+//jQuery(document).ready(function(){
+    jQuery("#farda-new-prods").als({
+        visible_items: 4,
+        scrolling_items: 1,
+        orientation: "horizontal",
+        circular: "yes",
+        autoscroll: "yes",
+        interval: 3000,
+//        direction: "right",
+        hide_arrow: false
+    });
+//});
+
+    jQuery("#farda-best").als({
+        visible_items: 4,
+        scrolling_items: 1,
+        orientation: "horizontal",
+        circular: "no",
+        autoscroll: "yes",
+        interval: 4000,
+        hide_arrow: false
+    });
+
+    jQuery("#farda-university").als({
+        visible_items: 4,
+        scrolling_items: 3,
+        orientation: "horizontal",
+        circular: "no",
+        autoscroll: "no",
+        hide_arrow: false
+    });
+
+    jQuery("#farda-literature").als({
+        visible_items: 4,
+        scrolling_items: 3,
+        orientation: "horizontal",
+        circular: "no",
+        autoscroll: "no",
+        hide_arrow: false
+    });
+
+    jQuery("#farda-software").als({
+        visible_items: 4,
+        scrolling_items: 3,
+        orientation: "horizontal",
+        circular: "no",
+        autoscroll: "no",
+        hide_arrow: false
+    });
+
+    jQuery("#farda-computer").als({
+        visible_items: 4,
+        scrolling_items: 3,
+        orientation: "horizontal",
+        circular: "no",
+        autoscroll: "no",
+        hide_arrow: false
+    });
+
+    jQuery("#farda-children").als({
+        visible_items: 4,
+        scrolling_items: 3,
+        orientation: "horizontal",
+        circular: "no",
+        autoscroll: "no",
+        hide_arrow: false
+    });
+
+    jQuery("#farda-humanities").als({
+        visible_items: 4,
+        scrolling_items: 3,
+        orientation: "horizontal",
+        circular: "no",
+        autoscroll: "no",
+        hide_arrow: false
+    });
+
+    jQuery("#farda-daily-offer").als({
+        visible_items: 3,
+        scrolling_items: 1,
+        orientation: "vertical",
+        circular: "no",
+        autoscroll: "no",
+        hide_arrow: false
+    });
+
+    jQuery("#farda-bestsellers").als({
+        visible_items: 3,
+        scrolling_items: 1,
+        orientation: "vertical",
+        circular: "no",
+        autoscroll: "no",
+        hide_arrow: false
+    });
+    
+//]]>
+</script>

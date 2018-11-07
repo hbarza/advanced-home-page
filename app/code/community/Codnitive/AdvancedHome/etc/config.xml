@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_AdvancedHome
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+-->
+<config>
+    <modules>
+        <Codnitive_AdvancedHome>
+            <version>0.1.71</version>
+            <title>Advanced Home Page</title>
+            <link><![CDATA[http://www.codnitive.com/]]></link>
+        </Codnitive_AdvancedHome>
+    </modules>
+    <global>
+        <models>
+            <advancedhome>
+                <class>Codnitive_AdvancedHome_Model</class>
+            </advancedhome>
+        </models>
+        <helpers>
+            <advancedhome>
+                <class>Codnitive_AdvancedHome_Helper</class>
+            </advancedhome>
+        </helpers>
+        <resources>
+            <advancedhome_setup>
+                <setup>
+                    <module>Codnitive_AdvancedHome</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </advancedhome_setup>
+            <advancedhome_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </advancedhome_write>
+            <advancedhome_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </advancedhome_read>
+        </resources>
+        <blocks>
+            <advancedhome>
+                <class>Codnitive_AdvancedHome_Block</class>
+            </advancedhome>
+        </blocks>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <advancedhome>
+                    <file>codnitive/advancedhome.xml</file>
+                </advancedhome>
+            </updates>
+        </layout>
+    </frontend>
+</config>

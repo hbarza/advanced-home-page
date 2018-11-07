@@ -1,0 +1,99 @@
+<?php
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_AdvancedHome
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+?>
+<div class="home-top">
+    <div id="fardab_4_wrapper">
+        <div id="fardab_4">
+            <div id="fardab_4_1_wrapper"></div>
+            <div id="fardab_4_2_wrapper">
+                <div id="fardab_4_2">
+                    <div class="logo_banner">
+                        <img class="banner_icon" src="<?php echo $this->getSkinUrl('images/old/post.png'); ?>" alt="Post" />
+                        <img class="text_icon" src="<?php echo $this->getSkinUrl('images/old/ersal.png'); ?>" alt="Ersal" />
+                    </div>
+                    <div class="logo_banner">
+                        <a class="banner_icon" href="<?php echo Mage::getUrl('checkout/cart/'); ?>"><img src="<?php echo $this->getSkinUrl('images/old/basket.png'); ?>" alt="سبد خرید" /></a>
+                        <a class="text_icon" href="<?php echo Mage::getUrl('checkout/cart/'); ?>"><img src="<?php echo $this->getSkinUrl('images/old/cart.png'); ?>" alt="سبد خرید" /></a>
+                        <div style="padding-left: 10px; padding-right: 10px; margin-top: -7px;">
+                            <div id="MOD_BASKET">
+                                <a class="text_icon" href="<?php echo Mage::getUrl('checkout/cart/'); ?>"><h4 class="count"><?php echo $this->addCartLink(); ?></h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo_banner">
+                        <a class="banner_icon" href="<?php echo Mage::getUrl('customer/account/'); ?>"><img src="<?php echo $this->getSkinUrl('images/old/user.png'); ?>" alt="ورود به بخش کاربری" /></a>
+                        <a class="text_icon" href="<?php echo Mage::getUrl('customer/account/'); ?>"><img src="<?php echo $this->getSkinUrl('images/old/user_title.png'); ?>" alt="ورود به بخش کاربری" /></a>
+                        <a href="<?php echo Mage::getUrl('customer/account/login/'); ?>"><img src="<?php echo $this->getSkinUrl('images/old/login.png'); ?>" alt="Login" /></a>
+                        <a href="<?php echo Mage::getUrl('customer/account/create/'); ?>"><img src="<?php echo $this->getSkinUrl('images/old/reg.png'); ?>" alt="Register" /></a>
+                    </div>
+                </div>
+            </div>
+            <div id="fardab_4_3_wrapper">
+                <div id="fardab_4_3">
+                    <div class="bannergroup">
+                        <div class="banneritem">
+                            <img src="<?php echo $this->getSkinUrl('images/old/banner1.jpg'); ?>" alt="تبليغات" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fardab_4_4_wrapper">
+                <div id="fardab_4_4">
+                    <div class="logo_banner">
+                        <img class="banner_icon" src="<?php echo $this->getSkinUrl('images/old/product.png'); ?>" alt="Post" />
+                        <div class="text_icon">
+                            <img src="<?php echo $this->getSkinUrl('images/old/product_title.png'); ?>" alt="Ersal" />
+                            <h4 class="count"><?php echo $this->getProductsCount() . ' ' . $this->__('Items'); ?></h4>
+                        </div>
+                    </div>
+                    <div class="logo_banner">
+                        <img class="banner_icon" src="<?php echo $this->getSkinUrl('images/old/contact.png'); ?>" alt="Basket" />
+                        <img class="text_icon" src="<?php echo $this->getSkinUrl('images/old/special.png'); ?>" alt="Sabad" />
+                    </div>
+                    <div class="logo_banner">
+                        <img class="banner_icon" src="<?php echo $this->getSkinUrl('images/old/post2.png'); ?>" alt="User" />
+                        <img class="text_icon" src="<?php echo $this->getSkinUrl('images/old/post2_title.png'); ?>" alt="User" />
+                    </div>
+                </div>
+            </div>
+            <div id="fardab_4_5_wrapper"></div>
+        </div>
+    </div>
+    <div id="fardab_5_wrapper">
+        <div id="fardab_5">
+            <div id="fardab_5_1_wrapper"></div>
+            <div id="fardab_5_2_wrapper">
+                <div id="fardab_5_2">
+                    <a class="bot_icon_right" href="<?php echo Mage::getUrl('faq'); ?>"><img title="راهنمای سایت" src="<?php echo $this->getSkinUrl('images/old/faq.png'); ?>" alt="راهنمای سایت" /></a>
+                    <a class="bot_icon_right" href="http://news.fardab.com"><img title="اخبار بازار کتاب" src="<?php echo $this->getSkinUrl('images/old/book-news.png'); ?>" alt="اخبار بازار کتاب" /></a>
+                    <a class="bot_icon_right" href="<?php echo Mage::getUrl('book-distribution'); ?>"><img title="توزیع کتاب" src="<?php echo $this->getSkinUrl('images/old/distribution.png'); ?>" alt="توزیع کتاب" /></a>
+                    <a class="bot_icon_right" href="<?php echo Mage::getUrl('mass'); ?>"><img title="فروش عمده کتاب" src="<?php echo $this->getSkinUrl('images/old/mass.png'); ?>" alt="فروش عمذه کتاب" /></a>
+                </div>
+            </div>
+            <div id="fardab_5_3_wrapper"></div>
+        </div>
+    </div>
+</div>
+
+<iframe src="/enamadframe.htm" frameborder="0" scrolling="no" allowtransparency="true" class="enamad"></iframe>
